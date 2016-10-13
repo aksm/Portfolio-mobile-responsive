@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Al Min's Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aksm/Portfolio_Assignment2.git"
+  },
+  "author": "Albert Min",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aksm/Portfolio_Assignment2/issues"
+  },
+  "homepage": "https://github.com/aksm/Portfolio_Assignment2#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemailer": "^2.6.4",
+    "nodemailer-smtp-transport": "^2.7.2"
+  }
+}
