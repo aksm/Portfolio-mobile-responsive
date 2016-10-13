@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "engines": {
+    "node": "4.5.0"
+  },
   "description": "Al Min's Portfolio",
   "main": "index.js",
   "scripts": {
