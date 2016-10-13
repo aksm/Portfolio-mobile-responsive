@@ -2,13 +2,13 @@
   "name": "portfolio",
   "version": "1.0.0",
   "engines": {
-    "node": "4.5.0"
+    "node": "4.5.0",
+    "npm": "2.15.9"
   },
   "description": "Al Min's Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
