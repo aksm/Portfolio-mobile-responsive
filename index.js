@@ -2,10 +2,11 @@ var express = require("express");
 var app = express();
 var nodemailer = require("nodemailer");
 var smptpTrans = require("nodemailer-smtp-transport");
+var port = Number(process.env.PORT || 3000);
 
-// app.get("/", function (request, response) {
-//   response.sendFile(__dirname + '/views/index.html');
-// });
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + '/views/index.html');
+});
 
 app.post("/contact", function (request, response) {
   var transporter = nodemailer.createTransport(smtpTrans({
@@ -31,4 +32,5 @@ app.post("/contact", function (request, response) {
   });
   response.sendStatus(200);
 });
+app.listen(port);
 
