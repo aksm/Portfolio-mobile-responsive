@@ -3,9 +3,9 @@ var app = express();
 var nodemailer = require("nodemailer");
 var smptpTrans = require("nodemailer-smtp-transport");
 
-app.get("/", function (request, response) {
-  response.sendFile(__dirname + '/views/index.html');
-});
+// app.get("/", function (request, response) {
+//   response.sendFile(__dirname + '/views/index.html');
+// });
 
 app.post("/contact", function (request, response) {
   var transporter = nodemailer.createTransport(smtpTrans({
