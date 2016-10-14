@@ -1,7 +1,7 @@
 var express = require("express");
 var app = express();
 var nodemailer = require("nodemailer");
-var smptpTrans = require("nodemailer-smtp-transport");
+var smtpTrans = require("nodemailer-smtp-transport");
 var port = Number(process.env.PORT || 3000);
 
 app.get("/", function (request, response) {
