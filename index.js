@@ -33,6 +33,7 @@ app.post("/contact", function (request, response) {
     }
   });
   response.sendStatus(200);
+  response.redirect("/");
 });
 app.listen(port);
 

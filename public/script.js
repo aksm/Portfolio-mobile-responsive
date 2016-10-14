@@ -30,7 +30,18 @@ $(window).scroll(function() {
   } else {
     $('.navbar').css({"box-shadow": "none"});
   }
-  
-  
-  
 });
+  $("#contact-form").submit(function(event) {
+    event.preventDefault();
+    name = $("#name").val();
+    email = $("#email").val();
+    message = $("#message").val();
+    $.post("/contact?" + $.param({name: name, email: email, message: message}), function() {
+      $("#name").val("");
+      $("#email").val("");
+      $("#message").val("");
+      $("#name").focus();
+      $("#email").focus();
+      $("#message").focus();
+    });
+  });
