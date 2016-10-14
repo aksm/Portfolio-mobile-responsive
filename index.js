@@ -7,8 +7,8 @@ var port = Number(process.env.PORT || 3000);
 app.get("/", function (request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
-app.use('/static', express.static(__dirname + '/public'));
-app.use('/static', express.static(__dirname + '/assets'));
+app.use("/public", express.static(__dirname + "/public"));
+app.use("/assets", express.static(__dirname + "/assets"));
 
 app.post("/contact", function (request, response) {
   var transporter = nodemailer.createTransport(smtpTrans({
